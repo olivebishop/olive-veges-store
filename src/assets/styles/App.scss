@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Quicksand&family=Rubik:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #DDC9BA;
+
+  p, span {
+    font-family: 'Rubik', sans-serif;
+  }
+  a, button {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+  }
+
+  button {
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #312928;
+    transition: 0.5s ease-in-out;
+     &:hover {
+      color: #A73B38;
+     }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+  }
+}

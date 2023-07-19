@@ -1,0 +1,118 @@
+
+@mixin flex() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+nav {
+    @include flex();
+    gap: 100px;
+
+    ul {
+        @include flex();
+    }
+
+    a {
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn1 {
+        cursor: pointer;
+        button{
+            padding: 10px 20px;
+            background-color: #A97347;
+            color: #DDC9BA;
+            &:hover {
+                background-color: #fff;
+            }
+        }
+    }
+    .btn2 {
+        cursor: pointer;
+        button{
+            padding: 10px 20px;
+            background-color: #312928;
+            color: #DDC9BA;
+            &:hover {
+                background-color: #DDC9BA;
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+        .bar {
+            background-color: #120f0b;
+            width: 20px;
+            height: 3px;
+            display: block;
+            margin: 5px;
+            transition: 0.7s ease-in-out;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+   nav {
+    gap: 10px;
+    .navMenu {
+        position: fixed;
+        left: -900px;
+        top: 0px;
+        display: block;
+        text-align: center;
+        background-color: #fff;
+        padding: 100px 10px 500px 10px;
+        width: 80%;
+        transition: 0.7s ease-in-out;
+        &.active {
+            left: 0;
+        }
+
+        li {
+            margin: 16px 0;
+        }
+    }
+    .buttons {
+        position: fixed;
+        left: -900px;
+        padding: 0 20px;
+        top: 250px;
+        display: block;
+        text-align: center;
+        background-color: #fff;
+        width: 80%;
+        transition: 0.7s ease-in-out;
+        &.active {
+            left: 0;
+        }
+        button {
+            width: 100%;
+        }
+
+        li {
+            margin: 16px 0;
+        }
+    }
+
+    .hamburger {
+        display: block;
+
+        &.active {
+            .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    }
+   }
+}
