@@ -1,0 +1,43 @@
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px;
+    gap: 120px;
+
+    #headerImg {
+        transform: rotate(-20deg);
+        height: 500px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px 150px;
+
+    hr {
+        border: 0.5px solid #636364;
+        margin: 10px 0;
+    }
+    p {
+        color: #000;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        padding: 10px;
+        flex-direction: column-reverse;
+        gap: 20px;
+
+        #headerImg {
+            height: 400px;
+        }
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

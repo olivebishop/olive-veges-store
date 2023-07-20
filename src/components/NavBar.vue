@@ -1,6 +1,8 @@
 <template>
     <nav>
-      <RouterLink to="/">Logo</RouterLink>
+      <RouterLink to="/">
+        <img src="@/assets/images/logo.png" alt="Logo" id="logo"/>
+      </RouterLink>
       <ul :class="{ active: active, navMenu: true }">
         <li @click="unToggle">
           <RouterLink to="/">Home</RouterLink>
@@ -13,6 +15,9 @@
         </li>
       </ul>
       <ul :class="{active: active, buttons: true}">
+        <li class="cartIcon">
+          <img src="@/assets/images/cart.png"  alt="cart-icon">
+        </li>
         <li @click="unToggle" class="btn1">
           <button class="signup">Sign Up</button>
         </li>
@@ -31,6 +36,7 @@
   <script>
   import { RouterLink } from 'vue-router';
   import '../assets/styles/Navbar.scss'
+  
   
   export default {
     name: 'NavBar',

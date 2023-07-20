@@ -1,0 +1,48 @@
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h5 {
+        color: #0418d1;
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        color: rgb(53, 55, 58);
+        margin: 20px 0;
+    }
+    a {
+        background-color: #0418d1;
+        width: 50%;
+        border-radius: 20px;
+        cursor: pointer;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h5 {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 25px;
+        span {
+            display: none;
+        }
+    }
+
+    button {
+        width: 70% !important;
+    }
+}

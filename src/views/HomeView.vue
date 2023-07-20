@@ -1,9 +1,17 @@
 <script setup>
 import '../assets/styles/Home.scss'
+import HeaderText from '../components/HeaderText.vue'
 </script>
 
 <template>
-  <main>
-    <h1>Home</h1>
+  <main class="home">
+    <HeaderText />
+    <img src="@/assets/images/landing.png" alt="Sneaker" id="headerImg">
   </main>
+  <footer class="footer">
+    <hr>
+    <a class="a"  href="https://luqmanshaban.com" target="_blank">Created by Luqman Shaban</a>
+    <p >&copy; All rights reserved</p>
+  </footer>
 </template>
+

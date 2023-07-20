@@ -8,43 +8,63 @@
 nav {
     @include flex();
     gap: 100px;
+    padding: 40px 200px;
+
+    #logo {
+        height: 70px;
+        border-radius: 50%
+    }
 
     ul {
         @include flex();
-    }
-
-    a {
-        font-size: 18px;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-
-    .btn1 {
-        cursor: pointer;
-        button{
-            padding: 10px 20px;
-            background-color: #A97347;
-            color: #DDC9BA;
-            &:hover {
-                background-color: #fff;
+        li {
+            a {
+                font-size: 18px;
+                border-radius: 10px;
+                cursor: pointer;
+                color: #fff;
             }
         }
     }
-    .btn2 {
-        cursor: pointer;
-        button{
-            padding: 10px 20px;
-            background-color: #312928;
-            color: #DDC9BA;
+
+    .btn1 {
+        button {
+            background-color: #120f0b;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
             &:hover {
-                background-color: #DDC9BA;
+                background-color: #00aaff;
+                color: #120f0b;
             }
+        }
+    }
+
+    .btn2 {
+        button {
+            background-color: #fff;
+            color: #120f0b;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+            &:hover {
+                background-color: #00aaff;
+                color: #120f0b;
+            }
+        }
+    }
+    .cartIcon {
+        margin-right: 40px;
+        img {
+            height: 30px;
+            cursor: pointer;
         }
     }
 
     .hamburger {
         display: none;
         cursor: pointer;
+        z-index: 103;
         .bar {
             background-color: #120f0b;
             width: 20px;
@@ -59,7 +79,13 @@ nav {
 @media screen and (max-width: 600px) {
    nav {
     gap: 10px;
+    padding: 20px;
+
+    #logo {
+        height: 50px;
+    }
     .navMenu {
+        z-index: 100;
         position: fixed;
         left: -900px;
         top: 0px;
@@ -75,16 +101,19 @@ nav {
 
         li {
             margin: 16px 0;
+            a {
+                color: #120f0b;
+            }
         }
     }
     .buttons {
+        z-index: 101;
         position: fixed;
         left: -900px;
         padding: 0 20px;
         top: 250px;
         display: block;
         text-align: center;
-        background-color: #fff;
         width: 80%;
         transition: 0.7s ease-in-out;
         &.active {
@@ -92,6 +121,21 @@ nav {
         }
         button {
             width: 100%;
+        }
+
+        .cartIcon {
+            position: fixed;
+            // right: 10px;
+            top: 15px;
+        }
+
+        .login {
+            background-color: #00aaff;
+        }
+        .signup {
+            &:hover {
+                background-color: #000;
+            }
         }
 
         li {
