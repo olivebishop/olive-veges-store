@@ -1,39 +1,46 @@
 <template>
-    <section>
+    <section class="home-products">
+
         <article class="shoe black">
-            <img src="" alt="">
-            <h2>Dreakerz</h2>
-            <figure>
-                <p>$200</p>
-                <button class="cart-btn">
-                    <CartIcon />
-                </button>
-            </figure>
+            <RouterLink to="/product">
+                <img src="@/assets/images/black1.png" alt="black-sneakers" id="product3" class="product">
+                <h4>Black</h4>
+                <figure>
+                    <p>$200</p>
+                    <img src="@/assets/images/cart.png" alt="cart">
+                </figure>
+            </RouterLink>
         </article>
+
         <article class="shoe brown">
-            <img src="" alt="">
-            <h2>Dreakerz</h2>
-            <figure>
-                <p>$200</p>
-                <button class="cart-btn">
-                    <CartIcon />
-                </button>
-            </figure>
+            <RouterLink to="/product">
+                <img src="@/assets/images/brown1.png" alt="black-sneakers" id="product3" class="product">
+                <h4>Brown</h4>
+                <figure>
+                    <p>$200</p>
+                    <img src="@/assets/images/cart.png" alt="cart">
+                </figure>
+            </RouterLink>
         </article>
+
         <article class="shoe white">
-            <img src="" alt="">
-            <h2>Dreakerz</h2>
-            <figure>
-                <p>$200</p>
-                <button class="cart-btn">
-                    <CartIcon />
-                </button>
-            </figure>
+            <RouterLink to="/product">
+                <img src="@/assets/images/white1.png" alt="black-sneakers" id="product3" class="product">
+                <h4>White</h4>
+                <figure>
+                    <p>$200</p>
+                    <img src="@/assets/images/cart.png" alt="cart">
+                </figure>
+            </RouterLink>
         </article>
+
     </section>
 </template>
 
 <script>
 import '@/assets/styles/HomeProducts.scss';
 
+export default {
+    name: 'HomeProducts'
+}
 </script>

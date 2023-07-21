@@ -31,6 +31,7 @@
         <span class="bar"></span>
       </div>
     </nav>
+    <section class="hr"> <hr></section>
   </template>
   
   <script>

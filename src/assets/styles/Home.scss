@@ -3,12 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 100px;
+    padding: 10px 200px;
     gap: 120px;
 
     #headerImg {
         transform: rotate(-20deg);
-        height: 500px;
+        height: 700px;
     }
 }
 
@@ -17,7 +17,7 @@ footer {
     padding: 10px 150px;
 
     hr {
-        border: 0.5px solid #636364;
+        // border: 1px solid #636364;
         margin: 10px 0;
     }
     p {
@@ -33,7 +33,7 @@ footer {
         gap: 20px;
 
         #headerImg {
-            height: 400px;
+            height: 300px;
         }
     }
 
