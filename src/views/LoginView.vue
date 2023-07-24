@@ -17,13 +17,11 @@ const submitForm = async () => {
   loggedIn.value = true; // Set loading state to true before making the API call
   try {
     const response = await axios.post('http://localhost:8000/api/login', user.value);
-    console.log(response);
     localStorage.setItem('token', response.data.token)
     loggedIn.value = true
     invalidCredentials.value = false
 
     if (response.data.role === true) {
-      console.log(response.data.role);
       router.push('/admin');
     } else {
       router.push('/user');

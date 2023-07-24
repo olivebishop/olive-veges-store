@@ -2,6 +2,7 @@
 import '@/assets/styles/Signup.scss'
 import { ref } from 'vue';
 import axios from 'axios';
+import router from '../router';
 
 const user = ref({
   username: '',
@@ -12,8 +13,9 @@ const user = ref({
 const submitForm = async () => {
   try {
     const response = await axios.post('http://localhost:8000/api/signup', user.value);
-    console.log(response);
-   
+    if(response) {
+      router.push('/login')
+    }
   } catch (error) {
     console.log(error);
   }
