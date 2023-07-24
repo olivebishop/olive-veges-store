@@ -28,7 +28,7 @@ nav {
     }
 
     .btn1 {
-        button {
+        a {
             background-color: #120f0b;
             color: #fff;
             padding: 10px;
@@ -37,12 +37,14 @@ nav {
             &:hover {
                 background-color: #DDE0DC;
                 color: #120f0b;
+                text-decoration: underline;
             }
         }
     }
 
     .btn2 {
-        button {
+        a {
+            padding: 10px;
             background-color: #fff;
             color: #120f0b;
             cursor: pointer;
@@ -50,6 +52,7 @@ nav {
             &:hover {
                 background-color: #DDE0DC;
                 color: #120f0b;
+                text-decoration: underline;
             }
         }
     }

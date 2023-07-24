@@ -19,10 +19,10 @@
           <img src="@/assets/images/cart.png"  alt="cart-icon">
         </li>
         <li @click="unToggle" class="btn1">
-          <button class="signup">Sign Up</button>
+          <RouterLink to="/signup" class="signup">Sign Up</RouterLink>
         </li>
         <li @click="unToggle" class="btn2">
-          <button class="login">Login</button>
+          <RouterLink to="/login" class="login">Login</RouterLink>
         </li>
       </ul>
       <div :class="{ hamburger: true, active: active }" @click="toggle">

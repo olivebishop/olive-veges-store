@@ -6,7 +6,7 @@ import HomeProduct from '../components/HomeProduct.vue';
 
 <template>
   <main>
-    <section class="home">
+    <section class="home bg-blue">
       <HeaderText />
       <img src="@/assets/images/landing.png" alt="Sneaker" id="headerImg">
     </section>
@@ -17,7 +17,7 @@ import HomeProduct from '../components/HomeProduct.vue';
   <footer class="footer">
     <hr>
     <a class="a"  href="https://luqmanshaban.com" target="_blank">Created by Luqman Shaban</a>
-    <p >&copy; All rights reserved</p>
+    <p class="text-orange-600">&copy; All rights reserved</p>
   </footer>
 </template>
 
