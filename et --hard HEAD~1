@@ -1,0 +1,54 @@
+[33mcommit 78afd5d5aa2a55e2096c3f649c6de82c47486758[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: luqmanshaban <luqmanforeal@gmail.com>
+Date:   Mon Jul 24 09:32:08 2023 +0300
+
+    removing the console.logs
+
+[33mcommit b7d14664ce9d4b737fc55a4b42aee6ff33ee7325[m
+Author: luqmanshaban <luqmanforeal@gmail.com>
+Date:   Mon Jul 24 09:28:40 2023 +0300
+
+    adding the login/signup form
+
+[33mcommit 6937c9a3468e853a9eb09fb770411c8a2a857554[m
+Author: luqmanshaban <luqmanforeal@gmail.com>
+Date:   Mon Jul 24 09:27:47 2023 +0300
+
+    adding the form
+
+[33mcommit 6fc81a47e5df0b412160fc13fb359ada2fffff79[m
+Author: luqmanshaban <luqmanforeal@gmail.com>
+Date:   Sat Jul 22 17:52:58 2023 +0300
+
+    adding the product page
+
+[33mcommit 18c4ac780c3ad90cf94d63e221e662b81f17a0e0[m
+Author: luqmanshaban <luqmanforeal@gmail.com>
+Date:   Fri Jul 21 20:54:43 2023 +0300
+
+    updating the Navbar
+
+[33mcommit 911dce8cf231a61318611e9dc84c175e41dfa462[m
+Author: luqmanshaban <luqmanforeal@gmail.com>
+Date:   Fri Jul 21 11:30:44 2023 +0300
+
+    adding the products in the homepage
+
+[33mcommit 6dd2c9630cdbf52d71dac1175b63c1f4cf6f839f[m
+Author: luqmanshaban <luqmanforeal@gmail.com>
+Date:   Thu Jul 20 20:56:36 2023 +0300
+
+    adding the homepage
+
+[33mcommit 28b76154296831f280252bb848fd33c58716c7b4[m
+Author: Luqman Shaban <109437909+luqmanshaban@users.noreply.github.com>
+Date:   Wed Jul 19 22:40:39 2023 +0300
+
+    Update README.md
+
+[33mcommit 67238305337585e8da28c6df18cfe095c3085472[m
+Author: luqmanshaban <luqmanforeal@gmail.com>
+Date:   Wed Jul 19 22:36:04 2023 +0300
+
+    first commit
+    -creating the navbar
